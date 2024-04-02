@@ -1,0 +1,17 @@
+Senaryo
+Bir depo için stok hareketlerini takip eden bir uygulama istenmiştir.
+
+Kurallar
+Her ürün yalnızca bir kategoriye sahiptir.
+Bir kategori çok sayıda ürünün kategorisi olabilir.
+Her stok hareketi yalnızda bir ürün içerir.
+Bir ürün çok sayıda stok hareketinin parçası olabilir.
+Her stok hareketi yalnızca bir tedarikçi tarafından yapılır.
+Stok hareketi türü için "giriş" veya "çıkış" olarak yalnız iki değer girilebilir.
+Bir tedarikçi çok sayıda stok hareketi yapabilir.
+Ürünlerin stok miktarı stok hareketlerine göre güncellenmelidir.
+Ürün bilgileri boş geçilemez.
+Stok hareketleri bilgileri boş geçilemez.
+Tedarikçilerin bilgileri boş geçilemez.
+Her tedarikçi yalnızca bir firmaya çalışır.
+Bir firma çok sayıda tedarikçinin firması olabilir.

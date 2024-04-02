@@ -1,0 +1,4 @@
+bir ara tablo eklenerek bire çok olan tedarikçiler - firmalar ilişkisi (bir tedarikçi tek bir firmayla çalışabilir ama bir firma birçok tedarikçiyi çalıştırabilir.)
+yapısını çoka çok ilişki (yani
+bir tedarikçi birçok firmaya çalışabilir, bir firma da birçok tedarikçiyi çalıştırabilir) şeklinde 
+güncellenmiştir.

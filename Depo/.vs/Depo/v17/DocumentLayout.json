@@ -1,0 +1,152 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\ProjectFiles\\Depo\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{95F3F99F-7AD9-466E-9E22-D097AF6A010B}|Depo.csproj|e:\\projectfiles\\depo\\anasayfa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95F3F99F-7AD9-466E-9E22-D097AF6A010B}|Depo.csproj|solutionrelative:anasayfa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95F3F99F-7AD9-466E-9E22-D097AF6A010B}|Depo.csproj|e:\\projectfiles\\depo\\anasayfa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{95F3F99F-7AD9-466E-9E22-D097AF6A010B}|Depo.csproj|solutionrelative:anasayfa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95F3F99F-7AD9-466E-9E22-D097AF6A010B}|Depo.csproj|e:\\projectfiles\\depo\\urunler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95F3F99F-7AD9-466E-9E22-D097AF6A010B}|Depo.csproj|solutionrelative:urunler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95F3F99F-7AD9-466E-9E22-D097AF6A010B}|Depo.csproj|e:\\projectfiles\\depo\\urunler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{95F3F99F-7AD9-466E-9E22-D097AF6A010B}|Depo.csproj|solutionrelative:urunler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95F3F99F-7AD9-466E-9E22-D097AF6A010B}|Depo.csproj|e:\\projectfiles\\depo\\tedarikciler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95F3F99F-7AD9-466E-9E22-D097AF6A010B}|Depo.csproj|solutionrelative:tedarikciler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95F3F99F-7AD9-466E-9E22-D097AF6A010B}|Depo.csproj|e:\\projectfiles\\depo\\tedarikciler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{95F3F99F-7AD9-466E-9E22-D097AF6A010B}|Depo.csproj|solutionrelative:tedarikciler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95F3F99F-7AD9-466E-9E22-D097AF6A010B}|Depo.csproj|e:\\projectfiles\\depo\\kategoriler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{95F3F99F-7AD9-466E-9E22-D097AF6A010B}|Depo.csproj|solutionrelative:kategoriler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{95F3F99F-7AD9-466E-9E22-D097AF6A010B}|Depo.csproj|e:\\projectfiles\\depo\\kategoriler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{95F3F99F-7AD9-466E-9E22-D097AF6A010B}|Depo.csproj|solutionrelative:kategoriler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Urunler.cs [Tasar\u0131m]",
+              "DocumentMoniker": "E:\\ProjectFiles\\Depo\\Urunler.cs",
+              "RelativeDocumentMoniker": "Urunler.cs",
+              "ToolTip": "E:\\ProjectFiles\\Depo\\Urunler.cs [Tasar\u0131m]",
+              "RelativeToolTip": "Urunler.cs [Tasar\u0131m]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T13:24:42.951Z",
+              "EditorCaption": " [Tasar\u0131m]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Tedarikciler.cs",
+              "DocumentMoniker": "E:\\ProjectFiles\\Depo\\Tedarikciler.cs",
+              "RelativeDocumentMoniker": "Tedarikciler.cs",
+              "ToolTip": "E:\\ProjectFiles\\Depo\\Tedarikciler.cs",
+              "RelativeToolTip": "Tedarikciler.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAowEAAAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T13:22:15.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Tedarikciler.cs [Tasar\u0131m]",
+              "DocumentMoniker": "E:\\ProjectFiles\\Depo\\Tedarikciler.cs",
+              "RelativeDocumentMoniker": "Tedarikciler.cs",
+              "ToolTip": "E:\\ProjectFiles\\Depo\\Tedarikciler.cs [Tasar\u0131m]",
+              "RelativeToolTip": "Tedarikciler.cs [Tasar\u0131m]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T13:22:13.584Z",
+              "EditorCaption": " [Tasar\u0131m]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AnaSayfa.cs [Tasar\u0131m]",
+              "DocumentMoniker": "E:\\ProjectFiles\\Depo\\AnaSayfa.cs",
+              "RelativeDocumentMoniker": "AnaSayfa.cs",
+              "ToolTip": "E:\\ProjectFiles\\Depo\\AnaSayfa.cs [Tasar\u0131m]",
+              "RelativeToolTip": "AnaSayfa.cs [Tasar\u0131m]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T13:20:34.36Z",
+              "EditorCaption": " [Tasar\u0131m]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AnaSayfa.cs",
+              "DocumentMoniker": "E:\\ProjectFiles\\Depo\\AnaSayfa.cs",
+              "RelativeDocumentMoniker": "AnaSayfa.cs",
+              "ToolTip": "E:\\ProjectFiles\\Depo\\AnaSayfa.cs",
+              "RelativeToolTip": "AnaSayfa.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAIwFUAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T13:20:36.026Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Urunler.cs",
+              "DocumentMoniker": "E:\\ProjectFiles\\Depo\\Urunler.cs",
+              "RelativeDocumentMoniker": "Urunler.cs",
+              "ToolTip": "E:\\ProjectFiles\\Depo\\Urunler.cs",
+              "RelativeToolTip": "Urunler.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAowDwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T13:24:44.21Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Kategoriler.cs",
+              "DocumentMoniker": "E:\\ProjectFiles\\Depo\\Kategoriler.cs",
+              "RelativeDocumentMoniker": "Kategoriler.cs",
+              "ToolTip": "E:\\ProjectFiles\\Depo\\Kategoriler.cs",
+              "RelativeToolTip": "Kategoriler.cs",
+              "ViewState": "AQIAADQAAAAAAAAAAAAowEAAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T13:21:35.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Kategoriler.cs [Tasar\u0131m]",
+              "DocumentMoniker": "E:\\ProjectFiles\\Depo\\Kategoriler.cs",
+              "RelativeDocumentMoniker": "Kategoriler.cs",
+              "ToolTip": "E:\\ProjectFiles\\Depo\\Kategoriler.cs [Tasar\u0131m]",
+              "RelativeToolTip": "Kategoriler.cs [Tasar\u0131m]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-19T13:21:33.969Z",
+              "EditorCaption": " [Tasar\u0131m]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
