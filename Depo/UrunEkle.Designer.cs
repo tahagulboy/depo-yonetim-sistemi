@@ -49,15 +49,17 @@
             this.btIslemiOnayla.TabIndex = 33;
             this.btIslemiOnayla.Text = "İşlemi Onayla";
             this.btIslemiOnayla.UseVisualStyleBackColor = true;
+            this.btIslemiOnayla.Click += new System.EventHandler(this.btIslemiOnayla_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(14, 184);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 13);
+            this.label4.Size = new System.Drawing.Size(78, 13);
             this.label4.TabIndex = 31;
-            this.label4.Text = "Birim Fiyatı";
+            this.label4.Text = "Birim Fiyatı (TL)";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -67,6 +69,7 @@
             this.label3.Size = new System.Drawing.Size(63, 13);
             this.label3.TabIndex = 30;
             this.label3.Text = "Stok Miktarı";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // label2
             // 
@@ -76,6 +79,7 @@
             this.label2.Size = new System.Drawing.Size(46, 13);
             this.label2.TabIndex = 29;
             this.label2.Text = "Kategori";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -85,6 +89,7 @@
             this.label1.Size = new System.Drawing.Size(48, 13);
             this.label1.TabIndex = 28;
             this.label1.Text = "Ürün Adı";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // tBirimFiyati
             // 
@@ -92,6 +97,7 @@
             this.tBirimFiyati.Name = "tBirimFiyati";
             this.tBirimFiyati.Size = new System.Drawing.Size(211, 20);
             this.tBirimFiyati.TabIndex = 26;
+            this.tBirimFiyati.TextChanged += new System.EventHandler(this.tBirimFiyati_TextChanged);
             // 
             // cbKategori
             // 
@@ -100,6 +106,7 @@
             this.cbKategori.Name = "cbKategori";
             this.cbKategori.Size = new System.Drawing.Size(211, 21);
             this.cbKategori.TabIndex = 24;
+            this.cbKategori.SelectedIndexChanged += new System.EventHandler(this.cbKategori_SelectedIndexChanged);
             // 
             // UrunEkleBaslik
             // 
@@ -110,6 +117,7 @@
             this.UrunEkleBaslik.Size = new System.Drawing.Size(118, 29);
             this.UrunEkleBaslik.TabIndex = 22;
             this.UrunEkleBaslik.Text = "Ürün Ekle";
+            this.UrunEkleBaslik.Click += new System.EventHandler(this.UrunEkleBaslik_Click);
             // 
             // tUrunAdi
             // 
@@ -117,6 +125,7 @@
             this.tUrunAdi.Name = "tUrunAdi";
             this.tUrunAdi.Size = new System.Drawing.Size(211, 20);
             this.tUrunAdi.TabIndex = 34;
+            this.tUrunAdi.TextChanged += new System.EventHandler(this.tUrunAdi_TextChanged);
             // 
             // tStokMiktari
             // 
@@ -124,6 +133,7 @@
             this.tStokMiktari.Name = "tStokMiktari";
             this.tStokMiktari.Size = new System.Drawing.Size(211, 20);
             this.tStokMiktari.TabIndex = 35;
+            this.tStokMiktari.TextChanged += new System.EventHandler(this.tStokMiktari_TextChanged);
             // 
             // UrunEkle
             // 
@@ -142,6 +152,7 @@
             this.Controls.Add(this.UrunEkleBaslik);
             this.Name = "UrunEkle";
             this.Text = "Ürün Ekle";
+            this.Load += new System.EventHandler(this.UrunEkle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -33,7 +33,7 @@
             this.cbTur = new System.Windows.Forms.ComboBox();
             this.cbTedarikci = new System.Windows.Forms.ComboBox();
             this.tMiktar = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtHareket = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -83,12 +83,12 @@
             this.tMiktar.Size = new System.Drawing.Size(211, 20);
             this.tMiktar.TabIndex = 14;
             // 
-            // dateTimePicker1
+            // dtHareket
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(12, 247);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(211, 20);
-            this.dateTimePicker1.TabIndex = 15;
+            this.dtHareket.Location = new System.Drawing.Point(12, 247);
+            this.dtHareket.Name = "dtHareket";
+            this.dtHareket.Size = new System.Drawing.Size(211, 20);
+            this.dtHareket.TabIndex = 15;
             // 
             // label1
             // 
@@ -144,6 +144,7 @@
             this.btIslemiOnayla.TabIndex = 21;
             this.btIslemiOnayla.Text = "İşlemi Onayla";
             this.btIslemiOnayla.UseVisualStyleBackColor = true;
+            this.btIslemiOnayla.Click += new System.EventHandler(this.btIslemiOnayla_Click);
             // 
             // StokHareketiEkle
             // 
@@ -156,7 +157,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtHareket);
             this.Controls.Add(this.tMiktar);
             this.Controls.Add(this.cbTedarikci);
             this.Controls.Add(this.cbTur);
@@ -164,6 +165,7 @@
             this.Controls.Add(this.StokHareketiBaslik);
             this.Name = "StokHareketiEkle";
             this.Text = "Stok Hareketi Ekle";
+            this.Load += new System.EventHandler(this.StokHareketiEkle_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -176,7 +178,7 @@
         private System.Windows.Forms.ComboBox cbTur;
         private System.Windows.Forms.ComboBox cbTedarikci;
         private System.Windows.Forms.TextBox tMiktar;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtHareket;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

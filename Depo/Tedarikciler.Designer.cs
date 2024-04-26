@@ -31,10 +31,10 @@
             this.TedarikcilerBaslik = new System.Windows.Forms.Label();
             this.btTedarikciSil = new System.Windows.Forms.Button();
             this.btTedarikciEkle = new System.Windows.Forms.Button();
-            this.btTedarikciSec = new System.Windows.Forms.Button();
             this.dtTedarikciler = new System.Windows.Forms.DataGridView();
             this.btSearch = new System.Windows.Forms.Button();
             this.searchBox = new System.Windows.Forms.TextBox();
+            this.cbYenile = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtTedarikciler)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,12 +51,13 @@
             // btTedarikciSil
             // 
             this.btTedarikciSil.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btTedarikciSil.Location = new System.Drawing.Point(613, 192);
+            this.btTedarikciSil.Location = new System.Drawing.Point(613, 136);
             this.btTedarikciSil.Name = "btTedarikciSil";
             this.btTedarikciSil.Size = new System.Drawing.Size(175, 50);
             this.btTedarikciSil.TabIndex = 29;
             this.btTedarikciSil.Text = "Sil";
             this.btTedarikciSil.UseVisualStyleBackColor = true;
+            this.btTedarikciSil.Click += new System.EventHandler(this.btTedarikciSil_Click);
             // 
             // btTedarikciEkle
             // 
@@ -68,16 +69,6 @@
             this.btTedarikciEkle.Text = "Ekle";
             this.btTedarikciEkle.UseVisualStyleBackColor = true;
             this.btTedarikciEkle.Click += new System.EventHandler(this.btTedarikciEkle_Click);
-            // 
-            // btTedarikciSec
-            // 
-            this.btTedarikciSec.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btTedarikciSec.Location = new System.Drawing.Point(613, 136);
-            this.btTedarikciSec.Name = "btTedarikciSec";
-            this.btTedarikciSec.Size = new System.Drawing.Size(175, 50);
-            this.btTedarikciSec.TabIndex = 27;
-            this.btTedarikciSec.Text = "Seç";
-            this.btTedarikciSec.UseVisualStyleBackColor = true;
             // 
             // dtTedarikciler
             // 
@@ -106,17 +97,27 @@
             this.searchBox.Size = new System.Drawing.Size(428, 29);
             this.searchBox.TabIndex = 33;
             // 
+            // cbYenile
+            // 
+            this.cbYenile.Location = new System.Drawing.Point(739, 8);
+            this.cbYenile.Name = "cbYenile";
+            this.cbYenile.Size = new System.Drawing.Size(49, 37);
+            this.cbYenile.TabIndex = 35;
+            this.cbYenile.Text = "Yenile";
+            this.cbYenile.UseVisualStyleBackColor = true;
+            this.cbYenile.Click += new System.EventHandler(this.cbYenile_Click);
+            // 
             // Tedarikciler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 252);
+            this.Controls.Add(this.cbYenile);
             this.Controls.Add(this.btSearch);
             this.Controls.Add(this.searchBox);
             this.Controls.Add(this.TedarikcilerBaslik);
             this.Controls.Add(this.btTedarikciSil);
             this.Controls.Add(this.btTedarikciEkle);
-            this.Controls.Add(this.btTedarikciSec);
             this.Controls.Add(this.dtTedarikciler);
             this.Name = "Tedarikciler";
             this.Text = "Form2";
@@ -132,9 +133,9 @@
         private System.Windows.Forms.Label TedarikcilerBaslik;
         private System.Windows.Forms.Button btTedarikciSil;
         private System.Windows.Forms.Button btTedarikciEkle;
-        private System.Windows.Forms.Button btTedarikciSec;
         private System.Windows.Forms.DataGridView dtTedarikciler;
         private System.Windows.Forms.Button btSearch;
         private System.Windows.Forms.TextBox searchBox;
+        private System.Windows.Forms.Button cbYenile;
     }
 }

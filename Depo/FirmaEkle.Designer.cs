@@ -69,6 +69,7 @@
             this.btIslemiOnayla.TabIndex = 46;
             this.btIslemiOnayla.Text = "İşlemi Onayla";
             this.btIslemiOnayla.UseVisualStyleBackColor = true;
+            this.btIslemiOnayla.Click += new System.EventHandler(this.btIslemiOnayla_Click);
             // 
             // label5
             // 

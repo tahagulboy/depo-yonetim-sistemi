@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.dtUrunler = new System.Windows.Forms.DataGridView();
-            this.btUrunSec = new System.Windows.Forms.Button();
             this.btUrunEkle = new System.Windows.Forms.Button();
             this.btUrunSil = new System.Windows.Forms.Button();
             this.UrunlerBaslik = new System.Windows.Forms.Label();
             this.btSearch = new System.Windows.Forms.Button();
             this.searchBox = new System.Windows.Forms.TextBox();
+            this.cbYenile = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtUrunler)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,16 +45,6 @@
             this.dtUrunler.Name = "dtUrunler";
             this.dtUrunler.Size = new System.Drawing.Size(595, 162);
             this.dtUrunler.TabIndex = 15;
-            // 
-            // btUrunSec
-            // 
-            this.btUrunSec.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btUrunSec.Location = new System.Drawing.Point(613, 128);
-            this.btUrunSec.Name = "btUrunSec";
-            this.btUrunSec.Size = new System.Drawing.Size(175, 50);
-            this.btUrunSec.TabIndex = 16;
-            this.btUrunSec.Text = "Seç";
-            this.btUrunSec.UseVisualStyleBackColor = true;
             // 
             // btUrunEkle
             // 
@@ -70,12 +60,13 @@
             // btUrunSil
             // 
             this.btUrunSil.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btUrunSil.Location = new System.Drawing.Point(613, 184);
+            this.btUrunSil.Location = new System.Drawing.Point(613, 128);
             this.btUrunSil.Name = "btUrunSil";
             this.btUrunSil.Size = new System.Drawing.Size(175, 50);
             this.btUrunSil.TabIndex = 18;
             this.btUrunSil.Text = "Sil";
             this.btUrunSil.UseVisualStyleBackColor = true;
+            this.btUrunSil.Click += new System.EventHandler(this.btUrunSil_Click);
             // 
             // UrunlerBaslik
             // 
@@ -106,17 +97,27 @@
             this.searchBox.Size = new System.Drawing.Size(428, 29);
             this.searchBox.TabIndex = 35;
             // 
+            // cbYenile
+            // 
+            this.cbYenile.Location = new System.Drawing.Point(739, 9);
+            this.cbYenile.Name = "cbYenile";
+            this.cbYenile.Size = new System.Drawing.Size(49, 37);
+            this.cbYenile.TabIndex = 37;
+            this.cbYenile.Text = "Yenile";
+            this.cbYenile.UseVisualStyleBackColor = true;
+            this.cbYenile.Click += new System.EventHandler(this.cbYenile_Click);
+            // 
             // Urunler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 243);
+            this.Controls.Add(this.cbYenile);
             this.Controls.Add(this.btSearch);
             this.Controls.Add(this.searchBox);
             this.Controls.Add(this.UrunlerBaslik);
             this.Controls.Add(this.btUrunSil);
             this.Controls.Add(this.btUrunEkle);
-            this.Controls.Add(this.btUrunSec);
             this.Controls.Add(this.dtUrunler);
             this.Name = "Urunler";
             this.Text = "Ürünler";
@@ -129,11 +130,11 @@
 
         #endregion
         private System.Windows.Forms.DataGridView dtUrunler;
-        private System.Windows.Forms.Button btUrunSec;
         private System.Windows.Forms.Button btUrunEkle;
         private System.Windows.Forms.Button btUrunSil;
         private System.Windows.Forms.Label UrunlerBaslik;
         private System.Windows.Forms.Button btSearch;
         private System.Windows.Forms.TextBox searchBox;
+        private System.Windows.Forms.Button cbYenile;
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,9 +13,39 @@ namespace Depo
 {
     public partial class TedarikciEkle : Form
     {
+        private SqlConnection connection;
+
         public TedarikciEkle()
         {
             InitializeComponent();
+            connection = new SqlConnection("Data Source = DESKTOP-2DF58T4;Initial Catalog = Depo;Integrated Security = true;");
+        }
+
+        private void btIslemiOnayla_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                connection.Open();
+
+                string sqlQuery = "INSERT INTO Tedarikciler (Ad, Soyad, Adres, Telefon) VALUES (@ad, @soyad, @adres, @telefon)";
+
+                SqlCommand sqlCommand = new SqlCommand(sqlQuery, connection);
+
+                sqlCommand.Parameters.AddWithValue("@ad", tAd.Text);
+                sqlCommand.Parameters.AddWithValue("@soyad", tSoyad.Text);
+                sqlCommand.Parameters.AddWithValue("@adres", tAdres.Text);
+                sqlCommand.Parameters.AddWithValue("@telefon", tTelefon.Text);
+
+                sqlCommand.ExecuteNonQuery();
+
+                connection.Close();
+
+                MessageBox.Show("İşlem başarıyla tamamlandı!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Veritabanı bağlantısında hata oluştu: " + ex.Message);
+            }
         }
     }
 }

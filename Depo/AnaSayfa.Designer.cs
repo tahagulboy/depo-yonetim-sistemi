@@ -33,19 +33,20 @@
             this.btTedarikcilereGit = new System.Windows.Forms.Button();
             this.btFirmalaraGit = new System.Windows.Forms.Button();
             this.dtStokHareketleri = new System.Windows.Forms.DataGridView();
-            this.btStokHareketiSec = new System.Windows.Forms.Button();
             this.btStokHareketiEkle = new System.Windows.Forms.Button();
             this.btStokHareketiSil = new System.Windows.Forms.Button();
             this.AnaSayfaBaslik = new System.Windows.Forms.Label();
             this.searchBox = new System.Windows.Forms.TextBox();
             this.btSearch = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.cbYenile = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtStokHareketleri)).BeginInit();
             this.SuspendLayout();
             // 
             // btUrunlereGit
             // 
             this.btUrunlereGit.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btUrunlereGit.Location = new System.Drawing.Point(613, 220);
+            this.btUrunlereGit.Location = new System.Drawing.Point(613, 164);
             this.btUrunlereGit.Name = "btUrunlereGit";
             this.btUrunlereGit.Size = new System.Drawing.Size(175, 50);
             this.btUrunlereGit.TabIndex = 0;
@@ -56,7 +57,7 @@
             // btKategorilereGit
             // 
             this.btKategorilereGit.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btKategorilereGit.Location = new System.Drawing.Point(613, 276);
+            this.btKategorilereGit.Location = new System.Drawing.Point(613, 220);
             this.btKategorilereGit.Name = "btKategorilereGit";
             this.btKategorilereGit.Size = new System.Drawing.Size(175, 50);
             this.btKategorilereGit.TabIndex = 1;
@@ -67,7 +68,7 @@
             // btTedarikcilereGit
             // 
             this.btTedarikcilereGit.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btTedarikcilereGit.Location = new System.Drawing.Point(613, 332);
+            this.btTedarikcilereGit.Location = new System.Drawing.Point(613, 276);
             this.btTedarikcilereGit.Name = "btTedarikcilereGit";
             this.btTedarikcilereGit.Size = new System.Drawing.Size(175, 50);
             this.btTedarikcilereGit.TabIndex = 2;
@@ -78,7 +79,7 @@
             // btFirmalaraGit
             // 
             this.btFirmalaraGit.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btFirmalaraGit.Location = new System.Drawing.Point(613, 388);
+            this.btFirmalaraGit.Location = new System.Drawing.Point(613, 332);
             this.btFirmalaraGit.Name = "btFirmalaraGit";
             this.btFirmalaraGit.Size = new System.Drawing.Size(175, 50);
             this.btFirmalaraGit.TabIndex = 3;
@@ -94,16 +95,6 @@
             this.dtStokHareketleri.Size = new System.Drawing.Size(595, 330);
             this.dtStokHareketleri.TabIndex = 4;
             // 
-            // btStokHareketiSec
-            // 
-            this.btStokHareketiSec.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btStokHareketiSec.Location = new System.Drawing.Point(613, 108);
-            this.btStokHareketiSec.Name = "btStokHareketiSec";
-            this.btStokHareketiSec.Size = new System.Drawing.Size(175, 50);
-            this.btStokHareketiSec.TabIndex = 5;
-            this.btStokHareketiSec.Text = "Seç";
-            this.btStokHareketiSec.UseVisualStyleBackColor = true;
-            // 
             // btStokHareketiEkle
             // 
             this.btStokHareketiEkle.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -118,12 +109,13 @@
             // btStokHareketiSil
             // 
             this.btStokHareketiSil.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btStokHareketiSil.Location = new System.Drawing.Point(613, 164);
+            this.btStokHareketiSil.Location = new System.Drawing.Point(613, 108);
             this.btStokHareketiSil.Name = "btStokHareketiSil";
             this.btStokHareketiSil.Size = new System.Drawing.Size(175, 50);
             this.btStokHareketiSil.TabIndex = 8;
             this.btStokHareketiSil.Text = "Sil";
             this.btStokHareketiSil.UseVisualStyleBackColor = true;
+            this.btStokHareketiSil.Click += new System.EventHandler(this.btStokHareketiSil_Click);
             // 
             // AnaSayfaBaslik
             // 
@@ -154,17 +146,39 @@
             this.btSearch.UseVisualStyleBackColor = true;
             this.btSearch.Click += new System.EventHandler(this.btSearch_Click);
             // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.button1.Location = new System.Drawing.Point(613, 388);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(175, 50);
+            this.button1.TabIndex = 12;
+            this.button1.Text = "Tedarikçi Firma İlişkilendir";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // cbYenile
+            // 
+            this.cbYenile.Location = new System.Drawing.Point(739, 9);
+            this.cbYenile.Name = "cbYenile";
+            this.cbYenile.Size = new System.Drawing.Size(49, 37);
+            this.cbYenile.TabIndex = 13;
+            this.cbYenile.Text = "Yenile";
+            this.cbYenile.UseVisualStyleBackColor = true;
+            this.cbYenile.Click += new System.EventHandler(this.cbYenile_Click);
+            // 
             // AnaSayfa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cbYenile);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.btSearch);
             this.Controls.Add(this.searchBox);
             this.Controls.Add(this.AnaSayfaBaslik);
             this.Controls.Add(this.btStokHareketiSil);
             this.Controls.Add(this.btStokHareketiEkle);
-            this.Controls.Add(this.btStokHareketiSec);
             this.Controls.Add(this.dtStokHareketleri);
             this.Controls.Add(this.btFirmalaraGit);
             this.Controls.Add(this.btTedarikcilereGit);
@@ -186,12 +200,13 @@
         private System.Windows.Forms.Button btTedarikcilereGit;
         private System.Windows.Forms.Button btFirmalaraGit;
         private System.Windows.Forms.DataGridView dtStokHareketleri;
-        private System.Windows.Forms.Button btStokHareketiSec;
         private System.Windows.Forms.Button btStokHareketiEkle;
         private System.Windows.Forms.Button btStokHareketiSil;
         private System.Windows.Forms.Label AnaSayfaBaslik;
         private System.Windows.Forms.TextBox searchBox;
         private System.Windows.Forms.Button btSearch;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button cbYenile;
     }
 }
 

@@ -31,10 +31,10 @@
             this.KategorilerBaslik = new System.Windows.Forms.Label();
             this.btKategoriSil = new System.Windows.Forms.Button();
             this.btKategoriEkle = new System.Windows.Forms.Button();
-            this.btKategoriSec = new System.Windows.Forms.Button();
             this.dtKategoriler = new System.Windows.Forms.DataGridView();
             this.btSearch = new System.Windows.Forms.Button();
             this.searchBox = new System.Windows.Forms.TextBox();
+            this.cbYenile = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dtKategoriler)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,12 +51,13 @@
             // btKategoriSil
             // 
             this.btKategoriSil.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btKategoriSil.Location = new System.Drawing.Point(613, 205);
+            this.btKategoriSil.Location = new System.Drawing.Point(613, 149);
             this.btKategoriSil.Name = "btKategoriSil";
             this.btKategoriSil.Size = new System.Drawing.Size(175, 50);
             this.btKategoriSil.TabIndex = 24;
             this.btKategoriSil.Text = "Sil";
             this.btKategoriSil.UseVisualStyleBackColor = true;
+            this.btKategoriSil.Click += new System.EventHandler(this.btKategoriSil_Click);
             // 
             // btKategoriEkle
             // 
@@ -68,16 +69,6 @@
             this.btKategoriEkle.Text = "Ekle";
             this.btKategoriEkle.UseVisualStyleBackColor = true;
             this.btKategoriEkle.Click += new System.EventHandler(this.btKategoriEkle_Click);
-            // 
-            // btKategoriSec
-            // 
-            this.btKategoriSec.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btKategoriSec.Location = new System.Drawing.Point(613, 149);
-            this.btKategoriSec.Name = "btKategoriSec";
-            this.btKategoriSec.Size = new System.Drawing.Size(175, 50);
-            this.btKategoriSec.TabIndex = 22;
-            this.btKategoriSec.Text = "Seç";
-            this.btKategoriSec.UseVisualStyleBackColor = true;
             // 
             // dtKategoriler
             // 
@@ -106,17 +97,27 @@
             this.searchBox.Size = new System.Drawing.Size(428, 29);
             this.searchBox.TabIndex = 26;
             // 
+            // cbYenile
+            // 
+            this.cbYenile.Location = new System.Drawing.Point(739, 9);
+            this.cbYenile.Name = "cbYenile";
+            this.cbYenile.Size = new System.Drawing.Size(49, 37);
+            this.cbYenile.TabIndex = 36;
+            this.cbYenile.Text = "Yenile";
+            this.cbYenile.UseVisualStyleBackColor = true;
+            this.cbYenile.Click += new System.EventHandler(this.cbYenile_Click);
+            // 
             // Kategoriler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 271);
+            this.Controls.Add(this.cbYenile);
             this.Controls.Add(this.btSearch);
             this.Controls.Add(this.searchBox);
             this.Controls.Add(this.KategorilerBaslik);
             this.Controls.Add(this.btKategoriSil);
             this.Controls.Add(this.btKategoriEkle);
-            this.Controls.Add(this.btKategoriSec);
             this.Controls.Add(this.dtKategoriler);
             this.Name = "Kategoriler";
             this.Text = "Kategoriler";
@@ -132,9 +133,9 @@
         private System.Windows.Forms.Label KategorilerBaslik;
         private System.Windows.Forms.Button btKategoriSil;
         private System.Windows.Forms.Button btKategoriEkle;
-        private System.Windows.Forms.Button btKategoriSec;
         private System.Windows.Forms.DataGridView dtKategoriler;
         private System.Windows.Forms.Button btSearch;
         private System.Windows.Forms.TextBox searchBox;
+        private System.Windows.Forms.Button cbYenile;
     }
 }

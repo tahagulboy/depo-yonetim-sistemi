@@ -64,5 +64,70 @@ namespace Depo
             KategoriEkle kategoriEkle = new KategoriEkle();
             kategoriEkle.Show();
         }
+
+        private void btKategoriSil_Click(object sender, EventArgs e)
+        {
+            if (dtKategoriler.SelectedRows.Count > 0)
+            {
+                foreach (DataGridViewRow row in dtKategoriler.SelectedRows)
+                {
+                    int id = Convert.ToInt32(row.Cells["KategoriID"].Value);
+
+                    try
+                    {
+                        connection.Open();
+
+                        string deleteChildQuery = "DELETE FROM Urunler WHERE KategoriID = @ParentID";
+                        SqlCommand deleteChildCommand = new SqlCommand(deleteChildQuery, connection);
+                        deleteChildCommand.Parameters.AddWithValue("@ParentID", id);
+                        deleteChildCommand.ExecuteNonQuery();
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("İlişkili verileri silme hatası: " + ex.Message);
+                        connection.Close();
+                        return;
+                    }
+                    finally
+                    {
+                        connection.Close();
+                    }
+
+                    try
+                    {
+                        connection.Open();
+
+                        string deleteParentQuery = "DELETE FROM Kategoriler WHERE KategoriID = @KategoriID";
+                        SqlCommand deleteParentCommand = new SqlCommand(deleteParentQuery, connection);
+                        deleteParentCommand.Parameters.AddWithValue("@KategoriID", id);
+                        deleteParentCommand.ExecuteNonQuery();
+
+                        dtKategoriler.Rows.Remove(row);
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show("Veritabanından silme hatası: " + ex.Message);
+                    }
+                    finally
+                    {
+                        connection.Close();
+                    }
+                }
+            }
+            else
+            {
+                MessageBox.Show("Lütfen silinecek bir satır seçin.");
+            }
+        }
+
+        private void cbYenile_Click(object sender, EventArgs e)
+        {
+            string query = "SELECT * FROM Kategoriler";
+            adapter = new SqlDataAdapter(query, connection);
+            dataTable = new DataTable();
+            adapter.Fill(dataTable);
+            dtKategoriler.DataSource = dataTable;
+            dtKategoriler.Refresh();
+        }
     }
 }

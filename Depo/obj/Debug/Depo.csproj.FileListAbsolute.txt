@@ -17,3 +17,5 @@ E:\ProjectFiles\Depo\bin\Debug\Depo.pdb
 E:\ProjectFiles\Depo\obj\Debug\Depo.exe
 E:\ProjectFiles\Depo\obj\Debug\Depo.pdb
 E:\ProjectFiles\Depo\obj\Debug\Depo.AnaSayfa.resources
+E:\ProjectFiles\Depo\obj\Debug\Depo.TFIliskilendir.resources
+E:\ProjectFiles\Depo\obj\Debug\Depo.FTMenu.resources

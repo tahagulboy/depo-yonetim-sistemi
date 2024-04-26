@@ -89,5 +89,63 @@ namespace Depo
                 dtStokHareketleri.DataSource = dataTable;
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            FTMenu fTMenu = new FTMenu();
+            fTMenu.Show();
+        }
+
+        private void btStokHareketiSil_Click(object sender, EventArgs e)
+        {
+            List<int> hareketIDs = new List<int>();
+
+            foreach (DataGridViewRow row in dtStokHareketleri.SelectedRows)
+            {
+                if (row.Cells["HareketID"].Value != null)
+                {
+                    hareketIDs.Add(Convert.ToInt32(row.Cells["HareketID"].Value));
+                }
+            }
+
+            if (hareketIDs.Count > 0)
+            {
+                try
+                {
+                    using (SqlConnection connection = new SqlConnection("Data Source = DESKTOP-2DF58T4;Initial Catalog = Depo;Integrated Security = true;"))
+                    {
+                        connection.Open();
+
+                        string query = "DELETE FROM StokHareketleri WHERE HareketID IN (" + string.Join(",", hareketIDs) + ")";
+                        using (SqlCommand command = new SqlCommand(query, connection))
+                        {
+                            command.ExecuteNonQuery();
+                        }
+                    }
+
+                    GetData();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Veritabanından silme hatası: " + ex.Message);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Lütfen silinecek bir satır seçin.");
+            }
+        }
+
+
+
+        private void cbYenile_Click(object sender, EventArgs e)
+        {
+            string query = "SELECT * FROM StokHareketleri";
+            adapter = new SqlDataAdapter(query, connection);
+            dataTable = new DataTable();
+            adapter.Fill(dataTable);
+            dtStokHareketleri.DataSource = dataTable;
+            dtStokHareketleri.Refresh();
+        }
     }
 }
